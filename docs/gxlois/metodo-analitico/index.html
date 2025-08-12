@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Sobre el método analítico
+  
+  #
+  
+
+El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.
+En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:
+
+
+Análisis. La parte matemática/observacional. El proceso durante el cuál se obtienen observaciones. Hechos relevantes sobre el problema o sus elementos que justifican o hacen posible una solución. Suelen consistir en restricciones, relaciones algebraicas, simplificaciones, equivalencias lógicas, descomposiciones, etc.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/gxlois/metodo-analitico/">
+  <meta property="og:site_name" content="Algoritmia Heurística">
+  <meta property="og:title" content="Método Analítico">
+  <meta property="og:description" content="Sobre el método analítico # El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.
+En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:
+Análisis. La parte matemática/observacional. El proceso durante el cuál se obtienen observaciones. Hechos relevantes sobre el problema o sus elementos que justifican o hacen posible una solución. Suelen consistir en restricciones, relaciones algebraicas, simplificaciones, equivalencias lógicas, descomposiciones, etc.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Método Analítico | Algoritmia Heurística</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/gxlois/metodo-analitico/">
+<link rel="stylesheet" href="/book.min.639749708159028ec33cbaaabc38c7aa7fd1c38feeda955a951da11021b3aaee.css" integrity="sha256-Y5dJcIFZAo7DPLqqvDjHqn/Rw4/u2pValR2hECGzqu4=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.a0ca6d6d4d14a2948df21b7014665bbf4b63f32f20722bbf97898b1f776cc011.js" integrity="sha256-oMptbU0UopSN8htwFGZbv0tj8y8gciu/l4mLH3dswBE=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href=""><span>Algoritmia Heurística</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/gxlois/" class="">Gxlois</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/gxlois/metodo-analitico/" class="active">Método Analítico</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Método Analítico</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="sobre-el-método-analítico">
+  Sobre el método analítico
+  
+  <a class="anchor" href="#sobre-el-m%c3%a9todo-anal%c3%adtico">#</a>
+  
+</h1>
+<p>El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.</p>
+<p>En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:</p>
+<ul>
+<li>
+<p><strong>Análisis</strong>. La parte <strong>matemática/observacional</strong>. El proceso durante el cuál se obtienen observaciones. Hechos relevantes sobre el problema o sus elementos que justifican o hacen posible una solución. Suelen consistir en <em>restricciones</em>, <em>relaciones algebraicas</em>, <em>simplificaciones</em>, <em>equivalencias lógicas</em>, <em>descomposiciones</em>, etc.</p>
+</li>
+<li>
+<p><strong>Síntesis</strong>. La parte <strong>algorítmica/propositiva</strong>. El proceso durante el cuál se producen propuestas algorítimicas. Consiste tanto en la definición de un algoritmo tal cuál así como la definición de sus partes: Descomposición del problema de cómputo original en subproblemas, propuesta del uso de alguna técnica computacional particular (como programación dinámica, el uso de alguna estructura de datos, etc.).</p>
+</li>
+</ul>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+
+  <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  &#34;delimiters&#34;: [
+    {&#34;left&#34;: &#34;$$&#34;, &#34;right&#34;: &#34;$$&#34;, &#34;display&#34;: true},
+    {&#34;left&#34;: &#34;$&#34;, &#34;right&#34;: &#34;$&#34;, &#34;display&#34;: false},
+    {&#34;left&#34;: &#34;\\(&#34;, &#34;right&#34;: &#34;\\)&#34;, &#34;display&#34;: false},
+    {&#34;left&#34;: &#34;\\[&#34;, &#34;right&#34;: &#34;\\]&#34;, &#34;display&#34;: true}
+  ]
+}
+);"></script>
+
+
+<p>Como ejemplo de cómo estos dos elementos de la solución de un problema juegan entre sí presento un problema simple y bastante conocido: Dado $N$ calcular $1 + 2 + 3 &hellip; + N$.</p>
+<p>Existen dos soluciones conocidas diamétricamente opuestas a este problema: Una compuesta principalmente por síntesis, y la otra compuesta principalmente por análisis.</p>
+<p>Podemos hacer un mínimo de análisis y darnos cuenta que podemos iterativamente calcular: 0, 0 + 1, 0 + 1 + 2, 0 + 1 + 2 + 3, etc. usando una estructura de iteración simple.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> n; std<span style="color:#f92672">::</span>cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> suma <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    suma <span style="color:#f92672">+=</span> i;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> suma <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>;
+</span></span></code></pre></div><p>Esto nos da una solución de complejidad $O(N)$. Esta es una solución esencialmente &ldquo;<strong>sintética</strong>&rdquo;.</p>
+<p>Del lado opuesto, podemos hacer primero un análisis puramente matemático del problema. Y así percatarnos de que existe una expresión simple equivalente al problema original (la manera de llegar a esta expresión no es el enfoque de éste artículo): $1 + 2 + 3 &hellip; + N = \frac{N (N + 1)}{2}$.</p>
+<p>La síntesis algorítmica que surge de esta observación es bastante directa:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> n; std<span style="color:#f92672">::</span>cin <span style="color:#f92672">&gt;&gt;</span> n;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> suma <span style="color:#f92672">=</span> n <span style="color:#f92672">*</span> (n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> suma <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>;
+</span></span></code></pre></div><p>Esto nos da una solución de complejidad temporal $O(1)$. Esta es una solución esencialmente &ldquo;<strong>analítica</strong>&rdquo;.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/gxlois/" class="flex align-center book-icon">
+        <img src="/svg/backward.svg" class="book-icon" alt="Previous" title="Gxlois" />
+        <span>Gxlois</span>
+      </a>
+    
+    </span>
+    <span>
+    
+    </span>
+  </div>
+  
+
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+
+<aside class="book-toc">
+  <div class="book-toc-content">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </div>
+</aside>
+
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

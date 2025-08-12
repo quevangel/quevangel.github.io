@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gxlois on Algoritmia Heurística</title>
+    <link>http://localhost:1313/docs/gxlois/</link>
+    <description>Recent content in Gxlois on Algoritmia Heurística</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/gxlois/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Método Analítico</title>
+      <link>http://localhost:1313/docs/gxlois/metodo-analitico/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/gxlois/metodo-analitico/</guid>
+      <description>&lt;h1 id=&#34;sobre-el-método-analítico&#34;&gt;&#xA;  Sobre el método analítico&#xA;  &#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#sobre-el-m%c3%a9todo-anal%c3%adtico&#34;&gt;#&lt;/a&gt;&#xA;  &#xA;&lt;/h1&gt;&#xA;&lt;p&gt;El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.&lt;/p&gt;&#xA;&lt;p&gt;En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Análisis&lt;/strong&gt;. La parte &lt;strong&gt;matemática/observacional&lt;/strong&gt;. El proceso durante el cuál se obtienen observaciones. Hechos relevantes sobre el problema o sus elementos que justifican o hacen posible una solución. Suelen consistir en &lt;em&gt;restricciones&lt;/em&gt;, &lt;em&gt;relaciones algebraicas&lt;/em&gt;, &lt;em&gt;simplificaciones&lt;/em&gt;, &lt;em&gt;equivalencias lógicas&lt;/em&gt;, &lt;em&gt;descomposiciones&lt;/em&gt;, etc.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
