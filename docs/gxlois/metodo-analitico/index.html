@@ -9,7 +9,13 @@
   #
   
 
-El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.
+El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva. Está fundamentado en las observaciones que he realizado sobre qué compone a una solución.
+
+  Las partes de una solución
+  
+  #
+  
+
 En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:
 
 
@@ -19,8 +25,8 @@ Análisis. La parte matemática/observacional. El proceso durante el cuál se ob
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/gxlois/metodo-analitico/">
   <meta property="og:site_name" content="Algoritmia Heurística">
   <meta property="og:title" content="Método Analítico">
-  <meta property="og:description" content="Sobre el método analítico # El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.
-En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:
+  <meta property="og:description" content="Sobre el método analítico # El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva. Está fundamentado en las observaciones que he realizado sobre qué compone a una solución.
+Las partes de una solución # En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:
 Análisis. La parte matemática/observacional. El proceso durante el cuál se obtienen observaciones. Hechos relevantes sobre el problema o sus elementos que justifican o hacen posible una solución. Suelen consistir en restricciones, relaciones algebraicas, simplificaciones, equivalencias lógicas, descomposiciones, etc.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -158,7 +164,12 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#las-partes-de-una-solución">Las partes de una solución</a></li>
+    <li><a href="#un-ejemplo-de-diferentes-grados-de-análisis-y-síntesis">Un ejemplo de diferentes grados de análisis y síntesis</a></li>
+  </ul>
+</nav>
 
 
 
@@ -175,7 +186,13 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#sobre-el-m%c3%a9todo-anal%c3%adtico">#</a>
   
 </h1>
-<p>El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva.</p>
+<p>El método analítico es la manera en que propongo estudiar y mejorar la manera de abordar problemas en la programación competitiva. Está fundamentado en las observaciones que he realizado sobre qué compone a una solución.</p>
+<h2 id="las-partes-de-una-solución">
+  Las partes de una solución
+  
+  <a class="anchor" href="#las-partes-de-una-soluci%c3%b3n">#</a>
+  
+</h2>
 <p>En mi práctica, he notado que existen dos principales procesos involucrados en el proceso de pensamiento que lleva a una solución:</p>
 <ul>
 <li>
@@ -185,6 +202,15 @@ https://github.com/alex-shpak/hugo-book
 <p><strong>Síntesis</strong>. La parte <strong>algorítmica/propositiva</strong>. El proceso durante el cuál se producen propuestas algorítimicas. Consiste tanto en la definición de un algoritmo tal cuál así como la definición de sus partes: Descomposición del problema de cómputo original en subproblemas, propuesta del uso de alguna técnica computacional particular (como programación dinámica, el uso de alguna estructura de datos, etc.).</p>
 </li>
 </ul>
+<p>La solución de un problema dado siempre tiene (en grados variables dependiendo de la naturaleza del problema) elementos analíticos/matemáticos y sintéticos/algorítmicos.</p>
+<p>El proceso de análisis está primordialmente interesado en la <strong>verdad</strong>, lo que se sabe cierto y falso sobre los elementos introducidos por el problema. No está de ninguna manera relacionado con las limitaciones computacionales, pero muchas veces las preguntas que responde están guíadas por estas limitaciones.</p>
+<p>El proceso de síntesis está primordialmente interesado en la <strong>computabilidad</strong>, lo que se sabe computable dadas las restricciones computacionales definidas por el problema. Los algoritmos propuestos por la síntesis están usualmente fundamentados en las verdades obtenidas por análisis.</p>
+<h2 id="un-ejemplo-de-diferentes-grados-de-análisis-y-síntesis">
+  Un ejemplo de diferentes grados de análisis y síntesis
+  
+  <a class="anchor" href="#un-ejemplo-de-diferentes-grados-de-an%c3%a1lisis-y-s%c3%adntesis">#</a>
+  
+</h2>
 
 <link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
@@ -200,8 +226,9 @@ https://github.com/alex-shpak/hugo-book
 );"></script>
 
 
-<p>Como ejemplo de cómo estos dos elementos de la solución de un problema juegan entre sí presento un problema simple y bastante conocido: Dado $N$ calcular $1 + 2 + 3 &hellip; + N$.</p>
-<p>Existen dos soluciones conocidas diamétricamente opuestas a este problema: Una compuesta principalmente por síntesis, y la otra compuesta principalmente por análisis.</p>
+<p>Para aclarar mejor a qué me refiero con análisis y síntesis, voy a presentar dos soluciones a un mismo problema. Una solución estará compuesta principalmente por síntesis, mientras que la otra estará compuesta principalmente por análisis.</p>
+<p>El problema es: Dado un $N$ entero, calcular $1 + 2 + 3 +  &hellip; + N$.</p>
+<p>Existen dos soluciones conocidas a este problema, diametralmente opuestas entre sí: Una compuesta principalmente por síntesis y la otra compuesta principalmente por análisis.</p>
 <p>Podemos hacer un mínimo de análisis y darnos cuenta que podemos iterativamente calcular: 0, 0 + 1, 0 + 1 + 2, 0 + 1 + 2 + 3, etc. usando una estructura de iteración simple.</p>
 <pre tabindex="0"><code>int n; std::cin &gt;&gt; n;
 int suma = 0;
@@ -209,13 +236,13 @@ for (int i = 1; i &lt;= n; i++) {
     suma += i;
 }
 std::cout &lt;&lt; suma &lt;&lt; &#39;\n&#39;;
-</code></pre><p>Esto nos da una solución de complejidad $O(N)$. Esta es una solución esencialmente &ldquo;<strong>sintética</strong>&rdquo;.</p>
-<p>Del lado opuesto, podemos hacer primero un análisis puramente matemático del problema. Y así percatarnos de que existe una expresión simple equivalente al problema original (la manera de llegar a esta expresión no es el enfoque de éste artículo): $1 + 2 + 3 &hellip; + N = \frac{N (N + 1)}{2}$.</p>
+</code></pre><p>Esto nos da una solución de complejidad $O(N)$. Esta es una solución esencialmente <strong>sintética</strong>.</p>
+<p>Del lado opuesto, podemos hacer primero un análisis puramente matemático del problema. Y así percatarnos de que existe una expresión simple equivalente al problema original (usando argumentos geométricos, aritméticos o algebraicos): $1 + 2 + 3 &hellip; + N = \frac{N (N + 1)}{2}$.</p>
 <p>La síntesis algorítmica que surge de esta observación es bastante directa:</p>
 <pre tabindex="0"><code>int n; std::cin &gt;&gt; n;
 int suma = n * (n + 1) / 2;
 std::cout &lt;&lt; suma &lt;&lt; &#39;\n&#39;;
-</code></pre><p>Esto nos da una solución de complejidad temporal $O(1)$. Esta es una solución esencialmente &ldquo;<strong>analítica</strong>&rdquo;.</p>
+</code></pre><p>Esto nos da una solución de complejidad temporal $O(1)$. Esta es una solución esencialmente <strong>analítica</strong>.</p>
 </article>
  
       
@@ -278,7 +305,12 @@ std::cout &lt;&lt; suma &lt;&lt; &#39;\n&#39;;
   <div class="book-toc-content">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#las-partes-de-una-solución">Las partes de una solución</a></li>
+    <li><a href="#un-ejemplo-de-diferentes-grados-de-análisis-y-síntesis">Un ejemplo de diferentes grados de análisis y síntesis</a></li>
+  </ul>
+</nav>
 
 
 
